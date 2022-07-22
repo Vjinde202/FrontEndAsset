@@ -1,0 +1,31 @@
+<h2>Asset List</h2>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+          
+            <th>Asset Name</th>
+            <th>Asset Model</th>
+            <th>Asset OS</th>
+            <th>Warranty</th>
+            <th>Purhcase Amount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let asset of assets">
+           
+            <td>{{asset.assetName}}</td>
+            <td>{{asset.assetModel}}</td>
+                <td>{{asset.assetOS}}</td>
+                <td>{{asset.warranty}}</td>
+                <td>{{asset.purchaseAmount | currency : 'INR'}}</td>
+                <td>
+                    <button (click)="updateAsset(asset.id)" class="btn btn-info">Update</button>
+                    <button (click)="deleteAsset(asset.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+                    <button (click)="assetDetails(asset.id)" class="btn btn-info" style="margin-left: 10px">View</button>
+                   
+                </td>
+
+        </tr>
+    </tbody>
+</table>

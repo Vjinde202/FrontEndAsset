@@ -1,0 +1,40 @@
+<br><div class="col-md-6 offset-md-4">
+    <h3>Update Asset</h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="from-group">
+            <label>Asset Name</label>
+            <input type="text" class="form-control" id="assetName"
+    
+            [(ngModel)] = "asset.assetName" name="assetName">
+        </div>
+        <div class="from-group">
+            <label>Asset Model</label>
+            <input type="text" class="form-control" id="assetModel"
+    
+            [(ngModel)] = "asset.assetModel" name="assetModel">
+        </div>
+    
+        <div class="from-group">
+            <label>Operating System</label>
+            <input type="text" class="form-control" id="assetOS"
+    
+            [(ngModel)] = "asset.assetOS" name="assetOS">
+        </div>
+    
+        <div class="from-group">
+            <label>Warranty</label>
+            <input type="text" class="form-control" id="warranty"
+    
+            [(ngModel)] = "asset.warranty" name="warranty">
+        </div>
+    
+        <div class="from-group">
+            <label>Purchase Amount</label>
+            <input type="text" class="form-control" id="purchaseAmount"
+    
+            [(ngModel)] = "asset.purchaseAmount" name="purchaseAmount">
+        </div>
+    
+         <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+    </div>

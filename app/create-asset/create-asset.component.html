@@ -1,0 +1,51 @@
+<br><div class="col-md-6 offset-md-4">
+<h3><i><marquee>Add Asset</marquee></i></h3>
+<form (ngSubmit) = "onSubmit()" autocomplete="off">
+    <!--<div class="from-group">
+        <label>Asset Name</label>
+        <input type="text" class="form-control" id="assetName"
+
+        [(ngModel)] = "asset.assetName" name="assetName">
+    </div> !-->
+   <div>
+    <label for="name"><b>Asset Name </b> &nbsp;&nbsp;&nabla;</label>
+
+<select [(ngModel)] = "asset.assetName" name="assetName" name="assetName" id="assetName">
+  <option value="Laptop" >Laptop </option>
+  <option value="Mouse" >Mouse</option>
+  
+</select>
+
+</div><br>
+
+    <div class="from-group">
+        <label><b>Asset Model</b></label>
+        <input type="text" class="form-control" id="assetModel"
+
+        [(ngModel)] = "asset.assetModel" name="assetModel">
+    </div>
+
+    <div class="from-group">
+        <label><b>Operating System</b></label>
+        <input type="text" class="form-control" id="assetOS"
+
+        [(ngModel)] = "asset.assetOS" name="assetOS">
+    </div>
+
+    <div class="from-group">
+        <label><b>Warranty</b></label>
+        <input type="text" class="form-control" id="warranty"
+
+        [(ngModel)] = "asset.warranty" name="warranty">
+    </div>
+
+    <div class="from-group">
+        <label><b>Purchase Amount</b></label>
+        <input type="text" class="form-control" id="purchaseAmount"
+
+        [(ngModel)] = "asset.purchaseAmount" name="purchaseAmount">
+    </div><br>
+
+     <button class="btn btn-success" type="submit">Submit</button>
+</form>
+</div>
